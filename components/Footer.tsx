@@ -1,38 +1,35 @@
+import React from 'react';
 import Link from 'next/link';
+import { Twitter, Github, Linkedin, BookOpen, Youtube, Facebook } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-white py-12 md:py-16 px-4 md:px-6 border-t border-gray-200">
-      <div className="container mx-auto max-w-4xl">
-        <p className="text-lg mb-8">
-          Astellent is a consulting company that improves how software is designed, developed, and delivered to help organizations achieve more.
-        </p>
-        <p className="text-lg mb-8">
-          We believe the future will be built with software, data, and hard work. We collaborate with ambitious people who use cloud services and machine intelligence to make things that matter.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="font-semibold mb-4">Visit us at our office</h3>
-            <p>44 Tehama St</p>
-            <p>San Francisco, CA 94105</p>
+    <footer className="bg-gray-900 text-white py-8">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p className="text-sm">© 2023 ASTELLENT INC.</p>
+          <div className="flex space-x-4">
+            <Link href="https://twitter.com/astellent" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <Twitter size={20} />
+            </Link>
+            <Link href="https://github.com/astellent" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <Github size={20} />
+            </Link>
+            <Link href="https://www.linkedin.com/company/astellent/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <Linkedin size={20} />
+            </Link>
+            <Link href="https://medium.com/@astellent" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+              <BookOpen size={20} />
+            </Link>
+            <Link href="https://www.youtube.com/channel/UCjAAyhbrTd09aL4tPFmE3Rg" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <Youtube size={20} />
+            </Link>
+            <Link href="https://www.facebook.com/astellent" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <Facebook size={20} />
+            </Link>
           </div>
-          <div>
-            <h3 className="font-semibold mb-4">Start a conversation</h3>
-            <p>hello@astellent.com</p>
-            <p>(510) 871-3246</p>
-          </div>
+          <Link href="/privacy-policy" className="text-sm hover:text-yellow-300">PRIVACY POLICY</Link>
         </div>
-        <div className="mt-8 flex space-x-4">
-          {['Twitter', 'GitHub', 'LinkedIn', 'Medium', 'YouTube', 'Facebook'].map((social) => (
-            <a key={social} href="#" className="text-gray-600 hover:text-gray-900">
-              {social}
-            </a>
-          ))}
-        </div>
-        <p className="mt-8 text-sm text-gray-600">© 2020 ASTELLENT INC.</p>
-        <Link href="/privacy-policy" className="text-sm text-gray-600 hover:text-gray-900">
-          Privacy Policy
-        </Link>
       </div>
     </footer>
   );
