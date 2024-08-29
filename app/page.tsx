@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Header />
 
       <section className="bg-gray-900 text-white py-20">
@@ -28,20 +28,20 @@ export default function Home() {
         </div>
       </section>
 
-      <main className="container mx-auto px-4 md:px-6 py-12 md:py-24">
+      <main className="container mx-auto px-4 md:px-6 py-12 md:py-24 text-gray-900 dark:text-white">
         <section className="max-w-4xl mx-auto mb-16 md:mb-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
             <div>
-              <h2 className="text-5xl md:text-6xl font-bold mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
                 Create<br />Your<br />Future
               </h2>
-              <div className="w-16 h-1 bg-black mb-6"></div>
+              <div className="w-16 h-1 bg-black dark:bg-white mb-6"></div>
             </div>
             <div>
-              <p className="text-lg mb-6">
+            <p className="text-lg mb-6 text-gray-900 dark:text-white">
                 Seven decades into the computer revolution. Five decades since the invention of the microprocessor. Three decades into the rise of the modern Internet. The technology to transform industries with software is now here at a global scale.
               </p>
-              <p className="text-lg">
+              <p className="text-lg text-gray-900 dark:text-white">
                 However, software is not the destination. It is the foundation of modern organizations.
               </p>
             </div>
@@ -52,8 +52,8 @@ export default function Home() {
           <div className="space-y-16">
             <div className="flex items-start space-x-8">
               <div className="flex-1">
-                <h2 className="text-2xl font-bold mb-4">ARTIFICIAL INTELLIGENCE</h2>
-                <p className="text-lg mb-4">
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">ARTIFICIAL INTELLIGENCE</h2>
+                <p className="text-lg mb-4 text-gray-900 dark:text-white">
                   Every organization benefits from more intelligence. Artificial Intelligence is not a platform or an isolated strategy; it is a crucial capability to make better decisions. We offer solutions for data strategy, data engineering, data science, and machine learning.
                 </p>
                 <Link 
@@ -64,7 +64,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="w-16 flex-shrink-0">
-                <Brain size={64} />
+                <Brain size={64} className="text-gray-900 dark:text-white" />
               </div>
             </div>
 
@@ -82,7 +82,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="w-16 flex-shrink-0">
-                <Cloud size={64} />
+                <Cloud size={64} className="text-gray-900 dark:text-white" />
               </div>
             </div>
 
@@ -100,7 +100,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className="w-16 flex-shrink-0">
-                <Wrench size={64} />
+                <Wrench size={64} className="text-gray-900 dark:text-white" />
               </div>
             </div>
           </div>

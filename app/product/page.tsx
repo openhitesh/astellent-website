@@ -7,10 +7,10 @@ import { GitBranch, Cloud, Puzzle, Shield } from 'lucide-react';
 
 export default function ProductPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Header />
 
-      <main>
+      <main className="text-gray-900 dark:text-white">
         <section className="bg-gray-900 text-white py-20">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -43,22 +43,22 @@ export default function ProductPage() {
                 {
                   title: "DESIGN AND ENFORCE SECURITY POLICIES FOR ALL THE CI/CD PIPELINE STAGES",
                   description: "Designate digital or human attestors for every stage of your CI/CD pipeline including build, test, integrate, scan and deploy stages. One single place for your compliance and audit teams to gain visibility into what went in to create the container images. Verifiably prove the sanctity of all the stages of your development pipeline.",
-                  icon: <GitBranch size={48} />
+                  icon: <GitBranch size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "REQUIRE IMAGE SIGNING AND ATTESTATIONS",
                   description: "Put in place integration with your existing tools to gather metadata for attestations. Require images to be signed by trusted authorities during the development process and then enforce signature validation when deploying. By enforcing validation, you can gain tighter control over your container environment by ensuring only verified images are integrated into the build-and-release process.",
-                  icon: <Cloud size={48} />
+                  icon: <Cloud size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "NATIVE INTEGRATION WITH OPENSHIFT, EKS AND AKS",
                   description: "Binary Authorization integrates with the control planes natively on OpenShift, AKS (Azure Kubernetes Service) and EKS (Amazon Elastic Container Service for Kubernetes) to allow or block image deployment based on the policies that you define. You can also leverage integrations with various Registries Vulnerability Scanning to enable deploy-time controls based on build information and vulnerability findings.",
-                  icon: <Puzzle size={48} />
+                  icon: <Puzzle size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "ESTABLISH A PREVENTATIVE SECURITY POSTURE",
                   description: "Build flexible per-cluster policies to allow trusted images and emergency deployments. Simplify governance with a single structured path for code to get from development to production.",
-                  icon: <Shield size={48} />
+                  icon: <Shield size={48} className="text-gray-900 dark:text-white" />
                 }
               ].map((feature, index) => (
                 <div key={index} className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">
@@ -81,7 +81,7 @@ export default function ProductPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gray-100">
+        <section className="py-20 bg-gray-100 dark:bg-gray-800">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row justify-between items-start mb-16">
               <h2 className="text-4xl font-bold mb-4 md:mb-0">Our<br />Partners</h2>

@@ -7,10 +7,10 @@ import { Settings, Zap, Bot, Cloud, Shield } from 'lucide-react';
 
 export default function CloudPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Header />
 
-      <main>
+      <main className="text-gray-900 dark:text-white">
         <section className="bg-gray-900 text-white py-20">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -43,27 +43,27 @@ export default function CloudPage() {
                 {
                   title: "CLOUD ADOPTION AND ARCHITECTURE",
                   description: "We offer workshops to develop effective plans for your cloud adoption journey. We work with you to review your goals and inventory the applications you have. Our team considers essential areas of focus that span people, process, and technology. We address your business and technical capabilities, including governance, platform, security, and operations. We provide mentoring to improve teamwork, cultivate a creative culture, and navigate change.",
-                  icon: <Settings size={48} />
+                  icon: <Settings size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "CLOUD SPRINT",
                   description: "We offer a hands-on workshop to develop a cloud foundation and move your first workload. Our architecture follows Cloud Security Alliance guidelines for networking, encryption, and log management. We automate images, federate identity and access management, and integrate with your network. For governance, we establish your billing accounts, budgets, and resource monitoring.",
-                  icon: <Zap size={48} />
+                  icon: <Zap size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "CLOUD AUTOMATION",
                   description: "Automation is an essential technology for modernization and digital transformation. Build your infrastructure with reusable, battle-tested automation written and supported by our experts. We develop code that flawlessly describes and deploys your application infrastructure. We also ensure it is simple to maintain. Your automation should not be more complicated than the tasks it is replacing.",
-                  icon: <Bot size={48} />
+                  icon: <Bot size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "CLOUD MIGRATION",
                   description: "We deliver the safest and fastest way to migrate your applications to the cloud. We assess your workload to understand the technology, integrations, dependencies, and compliance needs. We then transition you to a custom-built cloud architecture with immutable, version-controlled infrastructure. By migrating, our clients achieve an average savings of 40% year-over-year.",
-                  icon: <Cloud size={48} />
+                  icon: <Cloud size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "CLOUD OPERATIONS AND GOVERNANCE",
                   description: "As your cloud environment grows, it is easy to lose track of all the moving parts. There is a staggering volume of financial data to handle. Meeting regulatory compliance and security obligations is complex. We work with you to improve cost allocation, reservation coverage, reporting, and amortization. Our team prevents costly budget overages and reduces costs by optimizing your workload. We offer automation for continuous compliance with over 1000 security and regulatory controls.",
-                  icon: <Shield size={48} />
+                  icon: <Shield size={48} className="text-gray-900 dark:text-white" />
                 }
               ].map((solution, index) => (
                 <div key={index} className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">
@@ -86,7 +86,7 @@ export default function CloudPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gray-100">
+        <section className="py-20 bg-gray-100 dark:bg-gray-800">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row justify-between items-start mb-16">
               <h2 className="text-4xl font-bold mb-4 md:mb-0">Our<br />Partners</h2>

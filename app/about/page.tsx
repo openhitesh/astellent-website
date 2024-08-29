@@ -6,10 +6,10 @@ import { Twitter, Github, Linkedin, BookOpen, Youtube, Facebook } from 'lucide-r
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Header />
 
-      <main>
+      <main className="text-gray-900 dark:text-white">
         <section className="bg-gray-900 text-white py-12 md:py-20">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -71,7 +71,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-12 md:py-20 bg-gray-100">
+        <section className="py-12 md:py-20 bg-gray-100 dark:bg-gray-800">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row justify-between items-start mb-12 md:mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-0">Our<br />Partners</h2>

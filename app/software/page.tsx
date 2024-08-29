@@ -7,10 +7,10 @@ import { BarChart2, Cloud, Puzzle, Lightbulb } from 'lucide-react';
 
 export default function SoftwarePage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Header />
 
-      <main>
+      <main className="text-gray-900 dark:text-white">
         <section className="bg-gray-900 text-white py-20">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -43,22 +43,22 @@ export default function SoftwarePage() {
                 {
                   title: "DEVOPS",
                   description: "DevOps is more than a set of tools. It is an approach to software development that emphasizes rapid, iterative work. We offer development and operations teams a common platform, practices, and tools. We automate integration, testing, and delivery so you can ship software with one click. We provide mentoring to improve teamwork, cultivate a creative culture, and navigate change.",
-                  icon: <BarChart2 size={48} />
+                  icon: <BarChart2 size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "APPLICATION MODERNIZATION",
                   description: "Organizations spend years investing in new business capabilities and acquisitions. Over time, this can result in a tangled mess of technology that wasn't designed for your business today. We remove technology roadblocks and transform your legacy applications. We preserve business logic and migrate to the best language, framework, and architecture.",
-                  icon: <Cloud size={48} />
+                  icon: <Cloud size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "MICROSERVICES AND CONTAINERS",
                   description: "Traditional monoliths have technological complexity and lengthy implementation cycles that limit business agility. We break down large applications into small microservices that provide a single function. Our team packages your services with containers and integrates with your software pipeline. We use Kubernetes to enable application load-balancing, auto-scaling, and policy-based control. We also deploy lightweight integration and API management for security and fault tolerance.",
-                  icon: <Puzzle size={48} />
+                  icon: <Puzzle size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "PRODUCT INNOVATION",
                   description: "We love helping organizations use software to solve real problems. To work with us is to learn by doing. Our team pairs with you to improve how you build and deploy exceptional software. We practice test-driven development and short development cycles for high speed and quality. Our approach ensures you solve the right problem while remaining flexible to change.",
-                  icon: <Lightbulb size={48} />
+                  icon: <Lightbulb size={48} className="text-gray-900 dark:text-white" />
                 }
               ].map((solution, index) => (
                 <div key={index} className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">
@@ -81,7 +81,7 @@ export default function SoftwarePage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gray-100">
+        <section className="py-20 bg-gray-100 dark:bg-gray-800">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row justify-between items-start mb-16">
               <h2 className="text-4xl font-bold mb-4 md:mb-0">Our<br />Partners</h2>

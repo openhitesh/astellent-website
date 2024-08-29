@@ -7,10 +7,10 @@ import { Network, GitBranch, Cpu, Presentation } from 'lucide-react';
 
 export default function AIPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       <Header />
 
-      <main>
+      <main className="text-gray-900 dark:text-white">
         <section className="bg-gray-900 text-white py-20">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -43,22 +43,22 @@ export default function AIPage() {
                 {
                   title: "DATA STRATEGY AND ARCHITECTURE",
                   description: "Success in Artificial Intelligence projects results from having the right goals and relevant data. We work with you to review your goals and inventory the data you have. We then develop suitable industry-specific use cases and data acquisition strategies. With useful data, we explore and select the right algorithm to tackle your problem.",
-                  icon: <Network size={48} />
+                  icon: <Network size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "DATA PIPELINE AND ENGINEERING",
                   description: "Valuable data is often scattered across many operational and analytical systems. Streamlining and automating data acquisition and enrichment is key to data scientist productivity. We deploy lightweight, modular middleware technologies that connect your applications and services. With a data lake in place, we enrich the raw data and build the right features for the task.",
-                  icon: <GitBranch size={48} />
+                  icon: <GitBranch size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "MODEL DEVELOPMENT AND DEPLOYMENT",
                   description: "A trained model is the core of a machine learning system. We run thousands of experiments to select the best framework and model parameters. Once trained, we then calibrate for performance and integrate it with your application. We develop secure, lightweight REST APIs to make it easy for you to use the model. We also offer advice for model deployment, maintenance, and monitoring.",
-                  icon: <Cpu size={48} />
+                  icon: <Cpu size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
                   title: "TRAINING AND WORKSHOPS",
                   description: "We offer workshops for developers and data scientists to tackle real-world problems with machine learning. Our workshops teach you the fundamentals of how to train and deploy neural networks. We then expand your knowledge with industry-specific training to build scalable, production applications.",
-                  icon: <Presentation size={48} />
+                  icon: <Presentation size={48} className="text-gray-900 dark:text-white" />
                 }
               ].map((solution, index) => (
                 <div key={index} className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">
@@ -81,7 +81,7 @@ export default function AIPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-gray-100 dark:bg-gray-800">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row justify-between items-start mb-16">
               <h2 className="text-4xl font-bold mb-4 md:mb-0">Our<br />Partners</h2>
