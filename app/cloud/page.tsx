@@ -21,7 +21,7 @@ export default function CloudPage() {
               Organizations that combine cloud technology, process, and culture improve their time-to-market by forty percent.
             </p>
             <Link 
-              href="/contact" 
+              href="mailto:hello@astellent.com" 
               className="inline-block text-yellow-300 text-lg font-semibold hover:text-yellow-400 transition duration-300"
             >
               → Let's make your software faster.
@@ -74,10 +74,10 @@ export default function CloudPage() {
                     <h3 className="text-2xl font-bold mb-4">{solution.title}</h3>
                     <p className="text-lg mb-4">{solution.description}</p>
                     <Link 
-                      href="/contact" 
+                      href="mailto:hello@astellent.com" 
                       className="inline-block bg-yellow-300 text-black px-4 py-2 font-semibold hover:bg-yellow-400 transition duration-300"
                     >
-                      CONTACT US
+                      LEARN MORE
                     </Link>
                   </div>
                 </div>

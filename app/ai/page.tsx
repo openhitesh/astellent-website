@@ -10,10 +10,10 @@ export default function AIPage() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      <main className="bg-gray-100">
+      <main>
         <section className="bg-gray-900 text-white py-20">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Machine learning is good.<br />Machine doing is better.
             </h1>
             <div className="w-16 h-1 bg-white mb-8"></div>
@@ -21,7 +21,7 @@ export default function AIPage() {
               Organizations that develop advanced analytics capabilities to make better decisions are twice as likely to be in their industry's top quartile of financial performance.
             </p>
             <Link 
-              href="/contact" 
+              href="mailto:hello@astellent.com" 
               className="inline-block text-yellow-300 text-lg font-semibold hover:text-yellow-400 transition duration-300"
             >
               → Let's make your software smarter.
@@ -69,10 +69,10 @@ export default function AIPage() {
                     <h3 className="text-2xl font-bold mb-4">{solution.title}</h3>
                     <p className="text-lg mb-4">{solution.description}</p>
                     <Link 
-                      href="/contact" 
+                      href="mailto:hello@astellent.com" 
                       className="inline-block bg-yellow-300 text-black px-4 py-2 font-semibold hover:bg-yellow-400 transition duration-300"
                     >
-                      CONTACT US
+                      LEARN MORE
                     </Link>
                   </div>
                 </div>
