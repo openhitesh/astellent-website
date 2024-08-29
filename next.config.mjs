@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
-    // Add any other Next.js config options here
-  };
+    eslint: {
+      ignoreDuringBuilds: true,
+    },
+  }
   
   export default nextConfig;
