@@ -97,7 +97,6 @@ export default function ProductPage() {
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );
