@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Network, GitBranch, Cpu, Presentation } from 'lucide-react';
+import { Network, GitBranch, Cpu, Server, Sparkles, Bot } from 'lucide-react';
 
 export default function AIPage() {
   return (
@@ -56,9 +56,19 @@ export default function AIPage() {
                   icon: <Cpu size={48} className="text-gray-900 dark:text-white" />
                 },
                 {
-                  title: "TRAINING AND WORKSHOPS",
-                  description: "We offer workshops for developers and data scientists to tackle real-world problems with machine learning. Our workshops teach you the fundamentals of how to train and deploy neural networks. We then expand your knowledge with industry-specific training to build scalable, production applications.",
-                  icon: <Presentation size={48} className="text-gray-900 dark:text-white" />
+                  title: "AI PLATFORMS",
+                  description: "We design AI platforms to enhance the developer experience, streamline operations, and expand capabilities through a comprehensive suite of services and support. By focusing on developer productivity and service adoption, we create a seamless platform experience that accelerates the deployment and utilization of AI technologies. We optimize the platform for performance, security, and availability and enable our clients to harness the full potential of AI, from data strategy and architecture to model development and deployment.",
+                  icon: <Server size={48} className="text-gray-900 dark:text-white" />
+                },
+                {
+                  title: "GENERATIVE AI AND RETRIEVAL-AUGMENTED GENERATION (RAG)",
+                  description: "We aim to unlock new levels of automation, customer engagement, and business growth with custom Generative AI solutions that generate text, images, and code tailored to your needs. We employ state-of-the-art models and techniques combined with Retrieval-Augmented Generation (RAG) architectures to produce high-quality, contextually relevant outputs. By merging the latest generative AI with sophisticated data retrieval techniques, we tailor solutions that generate text, visuals, and code, ensuring appropriate data sources deeply inform innovative outputs.",
+                  icon: <Sparkles size={48} className="text-gray-900 dark:text-white" />
+                },
+                {
+                  title: "MICROSOFT COPILOT PLUGIN DEVELOPMENT",
+                  description: "We designed our Microsoft Copilot Plugin Development services to amplify your team's capabilities by enabling natural language interactions with their web services. Through the development of custom plugins, we offer the opportunity to access real-time information, retrieve relational data, and perform actions across applications seamlessly within the Microsoft Copilot environment. We develop the plugins to integrate smoothly with existing workflows, allowing for innovative functionalities like instantaneous news updates on product launches, detailed reports on service tickets by team members, and the creation of tasks in organizational tracking systems.",
+                  icon: <Bot size={48} className="text-gray-900 dark:text-white" />
                 }
               ].map((solution, index) => (
                 <div key={index} className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">

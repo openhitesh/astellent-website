@@ -27,6 +27,7 @@ export default function Header() {
               <li><Link href="/ai" className="text-xl font-light hover:text-yellow-300 transition duration-300">AI</Link></li>
               <li><Link href="/cloud" className="text-xl font-light hover:text-yellow-300 transition duration-300">Cloud</Link></li>
               <li><Link href="/software" className="text-xl font-light hover:text-yellow-300 transition duration-300">Software</Link></li>
+              <li><Link href="/security" className="text-xl font-light hover:text-yellow-300 transition duration-300">Security</Link></li>
               <li><Link href="/about" className="text-xl font-light hover:text-yellow-300 transition duration-300">About</Link></li>
             </ul>
           </nav>
@@ -45,6 +46,7 @@ export default function Header() {
               <li><Link href="/ai" className="block text-xl font-light hover:text-yellow-300 transition duration-300">AI</Link></li>
               <li><Link href="/cloud" className="block text-xl font-light hover:text-yellow-300 transition duration-300">Cloud</Link></li>
               <li><Link href="/software" className="block text-xl font-light hover:text-yellow-300 transition duration-300">Software</Link></li>
+              <li><Link href="/security" className="block text-xl font-light hover:text-yellow-300 transition duration-300">Security</Link></li>
               <li><Link href="/about" className="block text-xl font-light hover:text-yellow-300 transition duration-300">About</Link></li>
             </ul>
           </nav>

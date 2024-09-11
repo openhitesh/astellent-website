@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Brain, Cloud, Wrench } from 'lucide-react';
+import { Brain, Cloud, Wrench, Shield } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -32,13 +32,13 @@ export default function Home() {
         <section className="max-w-4xl mx-auto mb-16 md:mb-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
             <div>
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
+              <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
                 Create<br />Your<br />Future
               </h2>
               <div className="w-16 h-1 bg-black dark:bg-white mb-6"></div>
             </div>
             <div>
-            <p className="text-lg mb-6 text-gray-900 dark:text-white">
+              <p className="text-lg mb-6 text-gray-900 dark:text-white">
                 Seven decades into the computer revolution. Five decades since the invention of the microprocessor. Three decades into the rise of the modern Internet. The technology to transform industries with software is now here at a global scale.
               </p>
               <p className="text-lg text-gray-900 dark:text-white">
@@ -70,8 +70,8 @@ export default function Home() {
 
             <div className="flex items-start space-x-8">
               <div className="flex-1">
-                <h2 className="text-2xl font-bold mb-4">CLOUD ENGINEERING</h2>
-                <p className="text-lg mb-4">
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">CLOUD ENGINEERING</h2>
+                <p className="text-lg mb-4 text-gray-900 dark:text-white">
                   Cloud engineering is more than technology. It is a strategic offering that brings together data-driven insights, culture, and technology. We offer solutions for cloud adoption, architecture, automation, migration, and governance.
                 </p>
                 <Link 
@@ -88,8 +88,8 @@ export default function Home() {
 
             <div className="flex items-start space-x-8">
               <div className="flex-1">
-                <h2 className="text-2xl font-bold mb-4">SOFTWARE ENGINEERING</h2>
-                <p className="text-lg mb-4">
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">SOFTWARE ENGINEERING</h2>
+                <p className="text-lg mb-4 text-gray-900 dark:text-white">
                   It does not matter how big you are, what industry you are in, or how regulated you are. Building software that matters has never been more important. We offer solutions for DevOps, application modernization, microservices, and product innovation.
                 </p>
                 <Link 
@@ -101,6 +101,24 @@ export default function Home() {
               </div>
               <div className="w-16 flex-shrink-0">
                 <Wrench size={64} className="text-gray-900 dark:text-white" />
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-8">
+              <div className="flex-1">
+                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">SECURITY</h2>
+                <p className="text-lg mb-4 text-gray-900 dark:text-white">
+                  In today's digital landscape, security is not just an option—it's a necessity. We provide comprehensive security solutions to safeguard your organization's assets and ensure compliance with industry standards. From cloud security to zero trust architecture, we ensure your organization stays safe in the digital world.
+                </p>
+                <Link 
+                  href="/security" 
+                  className="inline-block bg-yellow-300 text-black px-4 py-2 font-semibold hover:bg-yellow-400 transition duration-300"
+                >
+                  LEARN MORE →
+                </Link>
+              </div>
+              <div className="w-16 flex-shrink-0">
+                <Shield size={64} className="text-gray-900 dark:text-white" />
               </div>
             </div>
           </div>
